@@ -1,0 +1,2 @@
+0.8689, randomForest(log10(max_salary) ~ height + R + H + X3B + BB + BA + startYear + endYear + PA + totalYears + AB, data = RecentPlayersAndStatsAndSalary, ntree = 1000)
+1.000, svm(factor(HallOfFame) ~ birthYear + weight + height + bats + throws + HallOfFameYear + AB + R + H + X2B + X3B + HR + RBI + SB + CS + BB + BA + PA + TB + SlugPct + OBP + OPS + BABIP, data = HallOfFameContenders, cv.folds=5, trControl=trainControl(method="repeatedcv", number=10, repeats=3, family=binomial)
